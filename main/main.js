@@ -28,10 +28,10 @@ const root = new Vue (
                     ],
                 },
                 {
-                     name: 'Fabio',
-                     avatar: '_2',
-                     visible: true,
-                     messages: [
+                    name: 'Fabio',
+                    avatar: '_2',
+                    visible: true,
+                    messages: [
                         {
                             date: '20/03/2020 16:30:00',
                             text: 'Ciao come stai?',
