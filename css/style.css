@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
 main {
     width: 100%;
     min-height: 100vh;
@@ -18,7 +23,7 @@ main {
 }
 
 .side-left {
-    width: 500px;
+    width: 40%;
     height:calc(100vh - 20px);
 }
 
@@ -35,21 +40,21 @@ main {
 }
 
 .header-right .fa-solid {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 20px;
     color: rgb(172, 169, 169);
 }
 
 .header-left img {
-    max-width: 70px;
+    max-width: 60px;
     border-radius: 50%;
-    margin: 15px 20px;
+    margin: 15px 15px;
     vertical-align: middle;
 }
 
 
 .notifiche {
-    height: 125px;
+    height: 100px;
     background-color: #9FD8F8;
     position: relative;
     
@@ -59,7 +64,7 @@ main {
 .notifiche i {
     font-size: 30px;
     color: #9FD8F8;
-    margin: 20px auto;
+    margin: 15px auto;
     
     
     
@@ -68,32 +73,31 @@ main {
 .circle {
     background-color: #fff;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     position: absolute;
-    margin:30px 30px;
+    margin:15px 30px;
     
 
 }
 
 .notifiche-mes {
-    float: right;
-    margin-right: 150px;
-    margin-left: 100px;
-    margin-top: 45px;
+    float: left;
+    margin-left: 125px;
+    margin-top: 30px;
     vertical-align: middle;
 
 }
 .chat {
     background-color: #fff;
-    height:calc(100% - 225px);
+    height:calc(100% - 200px);
     width: 100%;
 
 }
 
 .side-right {
-    width: calc(100% - 500px);
+    width: 60%;
     height: 100%;
 
 }
@@ -115,7 +119,6 @@ main {
 }
 
 .bottom {
-    border: solid 1px black;
     background-color: #F3EEEA ;
     height: 100px;
     width: 100%;
@@ -130,8 +133,14 @@ main {
     color: gray;
 }
 
+.bottom .fa-regular {
+    font-size: 30px;
+    color: gray;
+
+}
+
 .bottom input {
-    width: 300px;
+    width: 40%;
     height: 50px;
 }
 
