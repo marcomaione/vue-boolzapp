@@ -53,6 +53,38 @@ main {
 .notifiche {
     height: 125px;
     background-color: #9FD8F8;
+    position: relative;
+    
+
+}
+
+.notifiche i {
+    font-size: 30px;
+    color: #9FD8F8;
+    margin: 20px auto;
+    
+    
+    
+}
+
+.circle {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    position: absolute;
+    margin:30px 30px;
+    
+
+}
+
+.notifiche-mes {
+    float: right;
+    margin-right: 150px;
+    margin-left: 100px;
+    margin-top: 45px;
+    vertical-align: middle;
 
 }
 
