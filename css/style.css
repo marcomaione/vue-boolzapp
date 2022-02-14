@@ -11,7 +11,6 @@ main {
 }
 
 .container {
-    border: solid 1px black;
     max-width: 80%;
     height:calc(100vh - 20px);
     margin:0 auto ;
@@ -19,14 +18,13 @@ main {
 }
 
 .side-left {
-    border: solid 1px black;
     width: 500px;
     height:calc(100vh - 20px);
 }
 
-.side-header {
+.side-header-l {
     height: 100px;
-    background-color:#F3EEEA ;
+    background-color:rgb(235, 235, 235) ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,11 +36,11 @@ main {
 
 .header-right .fa-solid {
     font-size: 30px;
-    margin-left: 15px;
+    margin-left: 20px;
     color: rgb(172, 169, 169);
 }
 
-.side-header img {
+.header-left img {
     max-width: 70px;
     border-radius: 50%;
     margin: 15px 20px;
@@ -87,16 +85,32 @@ main {
     vertical-align: middle;
 
 }
-
-.right {
-    border: solid 1px rgb(7, 7, 7);
-    width: calc(100% - 500px);
-
-}
-
 .chat {
-    border: solid 1px rgb(241, 6, 6);
+    background-color: #fff;
     height:calc(100% - 225px);
-    width: 95%;
+    width: 100%;
 
 }
+
+.side-right {
+    width: calc(100% - 500px);
+    height: 100%;
+
+}
+
+.side-header-r {
+    border-left: solid 0.5px gray;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(235, 235, 235) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mine {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-image: url("..//img/mine.jpg");
+}
+
