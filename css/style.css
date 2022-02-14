@@ -9,16 +9,18 @@ html {
     font-size: 15px;
 }
 
-main {
+.sfondo {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient( #479388 20%, #EAEAEA 20%);
+    background: linear-gradient( #479388 15%, #c2c0c0 15%);
 }
 
 .container {
     max-width: 80%;
-    height:calc(100vh - 20px);
-    margin:0 auto ;
+    height:100vh;
+    margin:0px auto ;
+    padding-top:10px;
+    padding-bottom: 20px;
     display: flex;
 }
 
@@ -136,7 +138,7 @@ main {
 
 .mine {
     width: 100%;
-    height: calc(100% - 200px);
+    height: calc(100% - 190px);
     background-image: url("..//img/mine.jpg");
 }
 
