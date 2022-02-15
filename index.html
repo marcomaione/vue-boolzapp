@@ -14,7 +14,7 @@
 <body>
     <main>
         <div class="sfondo">
-            <div class="container">
+            <div class="container" id="app">
                 <div class="side-left">
                     <div class="side-header-l">
                         <div class="header-left">
@@ -40,6 +40,15 @@
                         <div class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text">
+                        </div>
+                        <div class="contact" v-for="contact in contacts">
+                            <div class="contact-logo">
+                                <img :src='"img/avatar" + contact.avatar +".jpg"'>
+                            </div>
+                            <div class="contact-info">
+                                <h3>{{contact.name}}</h3>
+                                <span>Lorem ipsum</span>
+                            </div>
                         </div>
                     </div>
                 </div>

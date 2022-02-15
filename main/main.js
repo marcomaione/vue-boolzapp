@@ -7,7 +7,7 @@ const root = new Vue (
             contacts:[
                 {
                     name:'Michele',
-                    avatar:"",
+                    avatar:'_1',
                     visible: true,
                     messages: [
                         {
@@ -90,6 +90,7 @@ const root = new Vue (
                 },
 
             ],
+            
 
         },
     },

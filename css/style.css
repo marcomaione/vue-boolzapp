@@ -98,6 +98,23 @@ html {
 
 }
 
+.contact {
+    display: flex;
+    padding: 10px;
+}
+
+.contact-logo img {
+    height: 70px;
+    border-radius: 50%;
+    padding: 0px 10px;
+
+}
+
+.contact.active, .contact:hover {
+    background-color: #e9e1e1;
+
+}
+
 .search {
     border: solid 1px lightgray;
     width: 95%;
