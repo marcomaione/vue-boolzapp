@@ -63,16 +63,12 @@ html {
     height: 100px;
     background-color: #9FD8F8;
     position: relative;
-    
-
 }
 
 .notifiche i {
     font-size: 30px;
     color: #9FD8F8;
     margin: 15px auto;
-    
-    
     
 }
 
@@ -85,7 +81,6 @@ html {
     position: absolute;
     margin:15px 30px;
     
-
 }
 
 .notifiche-mes {
@@ -93,14 +88,13 @@ html {
     margin-left: 125px;
     margin-top: 30px;
     vertical-align: middle;
-
 }
+
 .chat {
     background-color:rgb(234, 243, 243);
     height:calc(100% - 200px);
     width: 100%;
     overflow-y: scroll;
-
 }
 
 .contact {

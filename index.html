@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Short+Stack&display=swap" rel="stylesheet">
 </head>
 <body>
+   
+<!--inizio del sito-->    
     <main>
         <div class="sfondo">
             <div class="container" id="app">
@@ -54,6 +56,8 @@
                         </div>
                     </div>
                 </div>
+<!--parte alta lato destro dove viene visualizzato l'utente con cui si sta parlando-->
+
                 <div class="side-right">
                     <div class="side-header-r">
                         <div class="header-left">
@@ -70,28 +74,24 @@
 
                     <div class="mine">
                         <div class="message received ">
-                            cio
+                            <p>ciao</p>
                         </div>
                         <div class="message sent ">
-                            coa
+                            <p>ciao</p>
                         </div>
                     </div>
+
 <!--bottom con input dove vengono scritti i mes-->
-                    
+
                     <div class="bottom">
                         <i class="fa-regular fa-face-smile"></i>
-                        <input type="text">
+                        <input v-on:keyup.enter="addMes" type="text" v-model="newMes">
                         <i class="fa-solid fa-microphone"></i>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-  
-    
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="./main/main.js"></script>

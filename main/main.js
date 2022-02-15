@@ -4,6 +4,7 @@ const root = new Vue (
     {
         el:'#app',
         data:{
+            newMes:"",
             contacts:[
                 {
                     name:'Michele',
@@ -90,6 +91,17 @@ const root = new Vue (
                 },
 
             ],
+            methods:{
+                /*inserisco un nuovo mes
+                addMes() {
+                    this.contacts.push({
+                        message:this.newMes,
+                    });
+                    this.newMes = '';
+                },
+                */
+
+            },
             
 
         },
