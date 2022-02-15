@@ -15,6 +15,8 @@ html {
     background: linear-gradient( #479388 15%, #c2c0c0 15%);
 }
 
+/*parte centrale del sito*/
+
 .container {
     max-width: 80%;
     height:100vh;
@@ -23,6 +25,8 @@ html {
     padding-bottom: 20px;
     display: flex;
 }
+
+/* parte sinistra del sito*/
 
 .side-left {
     width: 40%;
@@ -95,6 +99,7 @@ html {
     background-color:rgb(234, 243, 243);
     height:calc(100% - 200px);
     width: 100%;
+    overflow-y: scroll;
 
 }
 
@@ -137,6 +142,8 @@ html {
     height:90%;
 }
 
+/*parte alta destra del sito*/
+
 .side-right {
     width: 60%;
     height: 100%;
@@ -153,11 +160,36 @@ html {
     align-items: center;
 }
 
+
+/*parte centrale destra (messaggi)*/
+
 .mine {
     width: 100%;
     height: calc(100% - 190px);
     background-image: url("..//img/mine.jpg");
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
 }
+
+.message {
+    max-width:40%;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.received {
+    background-color: #fff;
+}
+
+.sent {
+    background-color: #d5f9ba;
+    margin-left: auto;
+}
+
+/*parte destra finale (bottom)*/
 
 .bottom {
     background-color: #F3EEEA ;
