@@ -184,7 +184,8 @@ html {
     margin-left: auto;
 }
 .sentDate {
-    padding-right: 0px;
+    text-align: end;
+    color: #908e8e;
 
 }
 

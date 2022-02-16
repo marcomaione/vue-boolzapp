@@ -91,13 +91,35 @@ const root = new Vue (
 
             ],
             active:0,
-            newMes: "",
+            newMes: '',
 
         },
         methods: {
             // rendo attivo il contatto al click 
             setActiveContact(index) {
                 this.active = index;
+            },
+            //inserisco nella chat un nuovo messaggio scritto dall utente
+            newMessage() {
+                const sendMessage = {
+                    date:"",
+                    text: this.newMes,
+                    status: 'sent'
+                };
+                this.contacts[this.active].messages.push(sendMessage);
+                this.newMes = "";
+
+                // imposto una risposta automatica dopo 1,5 sec
+
+                const newMessageReplay = {
+                    date:"",
+                    text: 'ok',
+                    status: 'received'
+                };
+
+                setTimeout(() => {
+                    this.contacts[this.active].messages.push(newMessageReplay);
+                },1500);
             }
         }
     },

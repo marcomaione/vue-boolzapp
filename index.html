@@ -49,9 +49,9 @@
                             <div class="contact-logo">
                                 <img :src='"img/avatar" + contact.avatar +".jpg"'>
                             </div>
-                            <div class="contact-info">
+                            <div  class="contact-info">
                                 <h3>{{contact.name}}</h3>
-                                <span>Lorem ipsum</span>
+                                <span>{{}}</span>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
 
                     <div class="bottom">
                         <i class="fa-regular fa-face-smile"></i>
-                        <input type="text">
+                        <input type="text" placeholder="scrivi un messaggio..." v-model="newMes" @keyup.enter="newMessage">
                         <i class="fa-solid fa-microphone"></i>
                     </div>
                 </div>
