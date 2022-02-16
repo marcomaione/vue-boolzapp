@@ -73,7 +73,7 @@ const root = new Vue (
                 },
                 {
                     name: 'Luisa',
-                    avatar: '_4',
+                    avatar: '_6',
                     visible: true,
                     messages: [
                         {
@@ -102,7 +102,7 @@ const root = new Vue (
             //inserisco nella chat un nuovo messaggio scritto dall utente
             newMessage() {
                 const sendMessage = {
-                    date:"",
+                    date: dayjs().format("DD/MM/YYYY HH:mm"),
                     text: this.newMes,
                     status: 'sent'
                 };
@@ -112,7 +112,7 @@ const root = new Vue (
                 // imposto una risposta automatica dopo 1,5 sec
 
                 const newMessageReplay = {
-                    date:"",
+                    date: dayjs().format("DD/MM/YYYY HH:mm"),
                     text: 'ok',
                     status: 'received'
                 };

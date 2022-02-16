@@ -12,7 +12,7 @@ html {
 .sfondo {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient( #479388 15%, #c2c0c0 15%);
+    background: linear-gradient( #479388 15%, #d9dbd5 15%);
 }
 
 /*parte centrale del sito*/
@@ -109,8 +109,14 @@ html {
 
 }
 
+.contact-info {
+    align-self: center;
+    margin-bottom: 5px;
+
+}
+
 .contact.active, .contact:hover {
-    background-color: #e9e1e1;
+    background-color: #eaebeb;
 
 }
 
@@ -184,6 +190,7 @@ html {
     margin-left: auto;
 }
 .sentDate {
+    margin-top: 5px;
     text-align: end;
     color: #908e8e;
 
@@ -202,18 +209,18 @@ html {
 
 .bottom .fa-solid {
     
-    font-size: 30px;
+    font-size: 20px;
     color: gray;
 }
 
 .bottom .fa-regular {
-    font-size: 30px;
+    font-size: 20px;
     color: gray;
 
 }
 
 .bottom input {
-    width: 40%;
-    height: 50px;
+    width: 60%;
+    height: 30px;
 }
 

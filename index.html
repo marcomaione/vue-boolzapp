@@ -43,7 +43,7 @@
                     <div class="chat">
                         <div class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text">
+                            <input type="text" placeholder="cerca in chat...">
                         </div>
                         <div class="contact" :class="(index == active) ? 'active':''" v-for="(contact,index) in contacts" @click="setActiveContact(index)">
                             <div class="contact-logo">
@@ -51,7 +51,7 @@
                             </div>
                             <div  class="contact-info">
                                 <h3>{{contact.name}}</h3>
-                                <span>{{}}</span>
+                                <span>lorem ipsum...</span>
                             </div>
                         </div>
                     </div>
@@ -61,8 +61,8 @@
                 <div class="side-right">
                     <div class="side-header-r">
                         <div class="header-left">
-                            <img src="img/avatar_1.jpg" alt="">
-                            <span>Michele</span>
+                            <img :src="`img/avatar${contacts[active].avatar}.jpg`">
+                            <span>{{contacts[active].name}}</span>
                         </div>
                         <div class="header-right">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -104,6 +104,8 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
     <script src="./main/main.js"></script>
 </body>
 </html>
