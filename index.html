@@ -43,13 +43,13 @@
                     <div class="chat">
                         <div class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="cerca in chat...">
+                            <input type="text" placeholder="cerca in chat..." v-model="cerca">
                         </div>
                         <div class="contact" :class="(index == active) ? 'active':''" v-for="(contact,index) in contacts" @click="setActiveContact(index)">
                             <div class="contact-logo">
                                 <img :src='"img/avatar" + contact.avatar +".jpg"'>
                             </div>
-                            <div  class="contact-info">
+                            <div class="contact-info">
                                 <h3>{{contact.name}}</h3>
                                 <span>lorem ipsum...</span>
                             </div>

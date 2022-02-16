@@ -1,8 +1,8 @@
 // avvio vue
 
 const root = new Vue (
-    {
-        el:'#app',
+    
+    {    el:'#app',
         data:{
             contacts:[
                 {
@@ -92,6 +92,7 @@ const root = new Vue (
             ],
             active:0,
             newMes: '',
+            cerca:"",
 
         },
         methods: {
@@ -121,8 +122,22 @@ const root = new Vue (
                     this.contacts[this.active].messages.push(newMessageReplay);
                 },1500);
             }
-        }
-    },
+        },
+        computed: {
+            filtraNomi(){
+             // funzione per comparare i nomi
+             function compare(a, b) {
+               if (a.name < b.name) return -1;
+               if (a.name > b.name) return 1;
+               return 0;
+            }
+              
+            return this.contacts.filter(user => {
+            return user.name.toLowerCase().includes(this.cerca.toLowerCase())
+            }).sort(compare)
+            }
+    }   }
+    
 );
 
 
