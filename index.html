@@ -45,7 +45,7 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text">
                         </div>
-                        <div class="contact" v-for="contact in contacts">
+                        <div class="contact" :class="(index == active) ? 'active':''" v-for="(contact,index) in contacts" @click="setActiveContact(index)">
                             <div class="contact-logo">
                                 <img :src='"img/avatar" + contact.avatar +".jpg"'>
                             </div>
@@ -73,19 +73,29 @@
 <!--parte centrale dove vengono visualizzati i mes mandati e ricevuti-->
 
                     <div class="mine">
+                        <div v-for="message in contacts[active].messages" class="message" :class="message.status">
+                            {{message.text}}
+                            <div class="sentDate">
+                                {{message.date}}
+                            </div>
+                        </div>
+                        
+
+                        <!--
                         <div class="message received ">
                             <p>ciao</p>
                         </div>
                         <div class="message sent ">
                             <p>ciao</p>
                         </div>
+                    -->
                     </div>
 
 <!--bottom con input dove vengono scritti i mes-->
 
                     <div class="bottom">
                         <i class="fa-regular fa-face-smile"></i>
-                        <input v-on:keyup.enter="addMes" type="text" v-model="newMes">
+                        <input type="text">
                         <i class="fa-solid fa-microphone"></i>
                     </div>
                 </div>
