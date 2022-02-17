@@ -43,9 +43,14 @@
                     <div class="chat">
                         <div class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="cerca in chat..." v-model="cerca">
+                            <input type="text" placeholder="cerca in chat..." v-model="cerca" @keyup="search()">
                         </div>
-                        <div class="contact" :class="(index == active) ? 'active':''" v-for="(contact,index) in contacts" @click="setActiveContact(index)">
+                        <div class="contact" 
+                            :class="(index == active) ? 'active':''" 
+                            v-for="(contact,index) in contacts" 
+                            @click="setActiveContact(index)"
+                            v-if="contact.visible == true">
+                            
                             <div class="contact-logo">
                                 <img :src='"img/avatar" + contact.avatar +".jpg"'>
                             </div>

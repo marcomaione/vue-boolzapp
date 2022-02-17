@@ -121,22 +121,23 @@ const root = new Vue (
                 setTimeout(() => {
                     this.contacts[this.active].messages.push(newMessageReplay);
                 },1500);
+            },
+
+            // imposto un filtraggio della chat
+            search() {
+                this.contacts.forEach((element) => {
+                    if (element.name.toLowerCase().includes(this.cerca.toLowerCase())) {
+                        element.visible = true;
+                    } else{
+                        element.visible = false;
+                    }
+                });
             }
         },
-        computed: {
-            filtraNomi(){
-             // funzione per comparare i nomi
-             function compare(a, b) {
-               if (a.name < b.name) return -1;
-               if (a.name > b.name) return 1;
-               return 0;
-            }
-              
-            return this.contacts.filter(user => {
-            return user.name.toLowerCase().includes(this.cerca.toLowerCase())
-            }).sort(compare)
-            }
-    }   }
+       
+        
+        
+    }   
     
 );
 
